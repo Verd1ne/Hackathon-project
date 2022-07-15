@@ -1,6 +1,6 @@
 import React from "react";
+import Layout from "../components/Layout";
 import { Toast } from "@capacitor/toast";
-import gatsbyStartercapacitor from "../assets/gatsby-starter-capacitor.png";
 
 const HomePage = () => {
   const displayNativeToast = async () => {
@@ -10,21 +10,10 @@ const HomePage = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <Layout>
       <h1 className="underline font-bold">gatsby-starter-capacitor</h1>
-      <img
-        style={{ width: "100%", maxWidth: 640 }}
-        src={gatsbyStartercapacitor}
-        alt="Gatsby and Capacitor"
-      />
       <button onClick={displayNativeToast}>Display native toast!</button>
-    </div>
+    </Layout>
   );
 }
 export default HomePage;
