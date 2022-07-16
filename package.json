@@ -8,21 +8,24 @@
     "gatsby"
   ],
   "scripts": {
-
     "build": "gatsby build",
     "start:android": "npm run build && npx cap copy android && npx cap open android",
     "start:ios": "npm run build && npx cap copy ios && npx cap open ios",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,yml,md}\""
   },
-
   "dependencies": {
     "@capacitor/android": "^3.3.2",
     "@capacitor/cli": "^3.3.2",
     "@capacitor/core": "^3.3.2",
     "@capacitor/ios": "^3.3.2",
     "@capacitor/toast": "^1.0.6",
-    "gatsby": "^4.2.0",
+    "gatsby": "^4.18.2",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-image": "^2.18.1",
+    "gatsby-plugin-sharp": "^4.18.1",
+    "gatsby-source-filesystem": "^4.18.1",
+    "gatsby-transformer-sharp": "^4.18.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
